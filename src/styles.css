@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Manrope:wght@200..800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Forma DJR Cyrilic Variable';
+  src: url('../public/assets/fonts-Regular.eot');
+  src: url('../public/assets/fonts-Regular.eot?#iefix')
+      format('embedded-opentype'),
+    url('../public/assets/fonts-Regular.woff2') format('woff2'),
+    url('../public/assets/fonts-Regular.woff') format('woff'),
+    url('../public/assets/fonts-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+
+  body {
+    @apply font-manrope;
+  }
+
+  h2 {
+    @apply font-forma text-2xl lg:text-4xl xl:text-5xl xl:leading-[2.9375rem] text-brand-dark;
+  }
+
+  h3 {
+    @apply text-2xl lg:text-4xl xl:text-[2.5rem] font-medium font-forma text-brand-dark;
+  }
+
+  h4 {
+    @apply text-2xl sm:text-[2rem] font-forma;
+  }
+
+  h5 {
+    @apply font-forma text-lg sm:text-xl lg:text-2xl text-brand-dark;
+  }
+
+  section,
+  footer {
+    @apply pt-8 pb-16 sm:pt-12 sm:pb-24 lg:pt-base lg:pb-32 rounded-t-20 lg:rounded-t-30 -mt-10 sm:-mt-14 lg:-mt-16 overflow-x-hidden;
+  }
+}
+
+/* Your CSS styles here */
+.tab-button.active {
+  @apply bg-brand-primary text-white;
+}
+
+.tab-content {
+  @apply hidden;
+}
+
+.tab-content.active {
+  @apply block;
+}
+
+.swiper-button-prev.inactive,
+.swiper-button-next.inactive {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+input[type='radio']:checked + label {
+  @apply hidden;
+}
+
+input[type='radio']:checked + label + svg {
+  @apply block;
+}
+
+/* WebKit (Chrome, Safari) */
+::-webkit-scrollbar {
+  height: 0px; /* width of the scrollbar */
+}
