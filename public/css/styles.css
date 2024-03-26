@@ -856,8 +856,16 @@ section,
   --tw-translate-x: -50%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
+.-translate-y-\[101\%\]{
+  --tw-translate-y: -101%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
 .-translate-y-full{
   --tw-translate-y: -100%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.-translate-y-\[3\.75rem\]{
+  --tw-translate-y: -3.75rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 .rotate-180{
@@ -1143,6 +1151,10 @@ section,
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
+.py-2\.5{
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+}
 .pb-24{
   padding-bottom: 6rem;
 }
@@ -1396,6 +1408,10 @@ input[type='radio']:checked + label + svg{
 .hover\:bg-brand-light-primary:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(241 252 248 / var(--tw-bg-opacity));
+}
+.hover\:bg-brand-light-input:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(247 249 250 / var(--tw-bg-opacity));
 }
 .hover\:text-brand-light-green:hover{
   --tw-text-opacity: 1;
@@ -1848,6 +1864,16 @@ input[type='radio']:checked + label + svg{
   .lg\:py-12{
     padding-top: 3rem;
     padding-bottom: 3rem;
+  }
+
+  .lg\:px-7{
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
+  }
+
+  .lg\:py-4{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
 
   .lg\:pb-32{

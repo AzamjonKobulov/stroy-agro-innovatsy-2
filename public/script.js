@@ -10,9 +10,11 @@ const navOnScroll = document.querySelector('.nav-on-scroll');
 document.addEventListener('scroll', function () {
   const navOnScroll = document.querySelector('.nav-on-scroll');
   if (window.scrollY > 100) {
-    navOnScroll.classList.remove('-translate-y-[101%]'); // Remove the translate class
+    navOnScroll.classList.remove('-translate-y-full'); // Remove the translate class
+    navOnScroll.classList.add('bg-white');
   } else {
-    navOnScroll.classList.add('-translate-y-[101%]');
+    navOnScroll.classList.add('-translate-y-full');
+    navOnScroll.classList.remove('bg-white');
   }
 });
 
@@ -92,6 +94,7 @@ swiper.on('slideChange', function () {
 });
 
 // Select List
+// Select List
 document.addEventListener('DOMContentLoaded', function () {
   const selectButtons = document.querySelectorAll('[id^="selectButton"]');
   const selectOptionsList = document.querySelectorAll('[id^="selectOptions"]');
@@ -141,10 +144,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // Append SVG icon to selected option
         const svgIcon = `<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect width="16" height="16" rx="8" fill="#9AE800"/>
-        <path d="M4 7.72727L7.07692 11L12 5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-        <path d="M4 7.72727L7.07692 11L12 5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-      </svg>`;
+          <rect width="16" height="16" rx="8" fill="#46DDD4"/>
+          <path d="M4 7.72727L7.07692 11L12 5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M4 7.72727L7.07692 11L12 5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>`;
         event.target.innerHTML =
           event.target.textContent +
           (event.target.classList.contains('bg-brand-light-primary')
